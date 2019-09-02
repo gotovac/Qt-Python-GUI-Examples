@@ -1,5 +1,5 @@
 import sys
-from PySide2.QtWidgets import QLineEdit, QPushButton, QApplication, QFormLayout, QDialog, QWidget, QLabel
+from PySide2.QtWidgets import QLineEdit, QPushButton, QApplication, QFormLayout, QWidget, QLabel
 
 class Form(QFormLayout):
 
