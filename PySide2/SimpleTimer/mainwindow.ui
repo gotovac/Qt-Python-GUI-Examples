@@ -6,12 +6,12 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>225</width>
-    <height>340</height>
+    <width>338</width>
+    <height>360</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Countdown</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLCDNumber" name="lcdNumber">
@@ -19,17 +19,20 @@
      <rect>
       <x>20</x>
       <y>20</y>
-      <width>181</width>
+      <width>301</width>
       <height>61</height>
      </rect>
     </property>
+    <property name="digitCount">
+     <number>3</number>
+    </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="btnKreni">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>130</y>
-      <width>181</width>
+      <y>190</y>
+      <width>301</width>
       <height>81</height>
      </rect>
     </property>
@@ -42,17 +45,57 @@
      <string>Kreni!</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QSpinBox" name="brojSekundi">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>220</y>
-      <width>181</width>
-      <height>41</height>
+      <y>120</y>
+      <width>301</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>22</pointsize>
+     </font>
+    </property>
+    <property name="minimum">
+     <number>0</number>
+    </property>
+    <property name="maximum">
+     <number>999</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblBrojSek">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>301</width>
+      <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string>Stani</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Broj sekundi&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblKraj">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>280</y>
+      <width>301</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#fe0101;&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::RichText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
   </widget>
@@ -61,7 +104,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>225</width>
+     <width>338</width>
      <height>26</height>
     </rect>
    </property>
