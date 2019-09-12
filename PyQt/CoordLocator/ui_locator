@@ -54,7 +54,7 @@ class Ui_Dialog(object):
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
-        self.label.setText(_translate("Dialog", "<html><head/><body><p><span style=\" font-size:12pt;\">Dužina:</span></p></body></html>"))
-        self.label_2.setText(_translate("Dialog", "<html><head/><body><p><span style=\" font-size:12pt;\">Širina:</span></p></body></html>"))
+        self.label.setText(_translate("Dialog", "<html><head/><body><p><span style=\" font-size:12pt;\">Longituda:</span></p></body></html>"))
+        self.label_2.setText(_translate("Dialog", "<html><head/><body><p><span style=\" font-size:12pt;\">Latituda:</span></p></body></html>"))
         self.btnPrikazi.setText(_translate("Dialog", "Prikaži na karti"))
 from PyQt5 import QtWebEngineWidgets
